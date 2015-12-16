@@ -45,6 +45,15 @@ Public Class Form1
 
         If Button1.Text = "Reset" Then
             Button1.Text = "Calculate"
+            ComboBox1.SelectedIndex = -1
+            ComboBox2.SelectedIndex = -1
+            ComboBox3.SelectedIndex = -1
+            ComboBox1.Text = "AM"
+            ComboBox2.Text = "HOUR"
+            ComboBox3.Text = "DAY"
+            Button1.Enabled = False
+            Label1.Text = "000000"
+
             GoTo enditnow
         End If
 
