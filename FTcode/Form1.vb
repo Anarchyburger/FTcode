@@ -12,7 +12,6 @@ Public Class Form1
     Dim thisday As Integer = Microsoft.VisualBasic.DateAndTime.Day(Now)
     Dim thisHour As Integer = Microsoft.VisualBasic.DateAndTime.Hour(Now)
 
-
     Private Sub RadioButton1_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton1.CheckedChanged
         Label1.Visible = True
         ComboBox1.Visible = False
@@ -29,7 +28,6 @@ Public Class Form1
         Else
             Label1.Text = autoCode
         End If
-
 
     End Sub
 
@@ -48,9 +46,7 @@ Public Class Form1
         If Button1.Text = "Reset" Then
             Label1.Text = "000000"
             ComboBox1.Refresh()
-
         End If
-
 
         Dim manHour As Integer = ComboBox2.SelectedItem
         Dim manDay As Integer = ComboBox3.SelectedItem
@@ -73,8 +69,6 @@ Public Class Form1
         End If
 
         Button1.Text = "Reset"
-
-
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles Me.Load
